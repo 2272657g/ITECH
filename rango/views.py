@@ -3,7 +3,6 @@ from django.shortcuts import render
 from rango.models import Category
 from rango.models import Page
 from rango.forms import PageForm
-from django.http import HttpResponse
 
 def index(request):
     category_list = Category.objects.order_by('-likes')[:5]

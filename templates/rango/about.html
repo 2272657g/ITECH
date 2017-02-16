@@ -1,23 +1,39 @@
-<!DOCTYPE html>
+    {% extends 'rango/base.html' %}
+	{% load staticfiles %}
+	{% block title_block %}
+		Rango
+	{% endblock %}
 
-{% load staticfiles %}
+	{% block body_block %}
+        <div>
+	        <h1 class="page-header">Rango says...</h1>
+	        This tutorial has been put together by Wei Gao.
+		</div>
+		<p>
+		<img src="{% static 'images/cat.jpg'%}" alt="Picture of Rango" />
+	<hr>
+	{% endblock %}
 
-<html>
+<!--<!DOCTYPE html>-->
 
-    <head>
-        <title>Rango</title>
-    </head>
+<!--{% load staticfiles %}-->
 
-<body>
-    <h1>Rango says...</h1>
-    <div>
-        This tutorial has been put together by Wei Gao.<br />
-    </div>
-    <div>
-        <a href="/rango/">Return</a><br />
-        <img src="{% static 'images/cat.jpg'%}"
-            alt="Picture of Rango" />
-    </div>
-</body>
+<!--<html>-->
 
-</html>
+    <!--<head>-->
+        <!--<title>Rango</title>-->
+    <!--</head>-->
+
+<!--<body>-->
+    <!--<h1>Rango says...</h1>-->
+    <!--<div>-->
+        <!--This tutorial has been put together by Wei Gao.<br />-->
+    <!--</div>-->
+    <!--<div>-->
+        <!--<a href="/rango/">Return</a><br />-->
+        <!--<img src="{% static 'images/cat.jpg'%}"-->
+            <!--alt="Picture of Rango" />-->
+    <!--</div>-->
+<!--</body>-->
+
+<!--</html>-->
